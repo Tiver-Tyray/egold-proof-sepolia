@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EGold Public Proofs - Sepolia Rehearsal</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18212f;
+      --muted: #586273;
+      --line: #d9dee7;
+      --soft: #f6f8fb;
+      --accent: #0f766e;
+      --gold: #a36b00;
+    }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: #ffffff;
+      line-height: 1.5;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 32px 0 12px;
+      font-size: 1.35rem;
+      letter-spacing: 0;
+    }
+    p, li {
+      color: var(--muted);
+    }
+    code, pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.94em;
+    }
+    code {
+      overflow-wrap: anywhere;
+    }
+    pre {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      padding: 14px;
+      overflow-x: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      padding: 16px;
+      background: #fff;
+    }
+    .status {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+    }
+    .status li {
+      border-left: 4px solid var(--accent);
+      background: var(--soft);
+      padding: 10px 12px;
+      color: var(--ink);
+    }
+    a {
+      color: #064e8a;
+    }
+    .label {
+      color: var(--gold);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="label">Sepolia Rehearsal</p>
+    <h1>EGold Public Proofs</h1>
+    <p>Public proof bundles for the verified Sepolia rehearsal of EGold. These files let a reviewer reproduce the proof hashes used in on-chain mint and burn events.</p>
+  </header>
+
+  <section>
+    <h2>Contract</h2>
+    <ul>
+      <li>Network: <strong>Sepolia</strong></li>
+      <li>Chain ID: <code>11155111</code></li>
+      <li>Contract: <code>0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9</code></li>
+      <li>Etherscan code page: <a href="https://sepolia.etherscan.io/address/0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9#code">https://sepolia.etherscan.io/address/0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9#code</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Verification Status</h2>
+    <ul class="status">
+      <li>Etherscan verification: PASSED</li>
+      <li>Post-deploy check: PASSED</li>
+      <li>Proof-linked smoke test: PASSED</li>
+      <li>Public proof bundle verification: PASSED</li>
+      <li>Offline proof index verification: PASSED</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Public Proof Index</h2>
+    <p><a href="proofs/sepolia/11155111/0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9/index.json">proofs/sepolia/11155111/0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9/index.json</a></p>
+  </section>
+
+  <section>
+    <h2>Proof Bundles</h2>
+    <div class="grid">
+      <article class="panel">
+        <p class="label">Mint</p>
+        <p>operationId: <code>0xe9396bc6a2411b20d9bfa07caa89fa61373408d02c8cb829cf570589cf865958</code></p>
+        <p>proofHash: <code>0xa4a58510a5ce4ff29fceaa4d8105a59740016197b0ef2800174cc63d2729cb94</code></p>
+        <p>bundleHash: <code>0x2758cd4141a1183b434f4c37c22c22c04a5cacd46a3c5e2278c333394b640407</code></p>
+        <p>tx: <code>0xc3b771ae3fbc18ff123624ac25fc256714c0c574c8200fcfc06bafccfb35746b</code></p>
+        <p><a href="proofs/sepolia/11155111/0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9/0xe9396bc6a2411b20d9bfa07caa89fa61373408d02c8cb829cf570589cf865958/README.md">Mint bundle README</a></p>
+      </article>
+      <article class="panel">
+        <p class="label">Burn</p>
+        <p>operationId: <code>0x6b5f69ab483efc91f02afcdbabda48caef32ce8f863208d4ff418c9e91af53ea</code></p>
+        <p>proofHash: <code>0xe6b0d4cd8409f6c3f281fd28b08d3efe70fc4056f6c3cb3da539dd195fca331b</code></p>
+        <p>bundleHash: <code>0x2afc50f4873ab268b53684b25208ee89f5ec6fb22f20b6484ec313bfa071b7b7</code></p>
+        <p>tx: <code>0x2dd0ce5f9f4e8d54682542f52ff272973b1ddeb8c6b4d51ea3205a1a5ebe6604</code></p>
+        <p><a href="proofs/sepolia/11155111/0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9/0x6b5f69ab483efc91f02afcdbabda48caef32ce8f863208d4ff418c9e91af53ea/README.md">Burn bundle README</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>How To Verify Locally</h2>
+    <pre><code>git clone &lt;REPO_URL&gt;
+cd &lt;REPO&gt;
+make verify-public-proofs-offline</code></pre>
+    <p>Optional RPC verification:</p>
+    <pre><code>set -a
+source .env.sepolia
+set +a
+make verify-public-proofs</code></pre>
+  </section>
+
+  <section>
+    <h2>Caveats</h2>
+    <ul>
+      <li>Sepolia only.</li>
+      <li>This proves the cryptographic proof publication flow.</li>
+      <li>It does not prove physical gold custody by itself.</li>
+      <li>Physical custody requires external audits, reserve ledger publication, custodian verification, and attester integrity.</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

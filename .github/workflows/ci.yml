@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: stable
+
+      - name: Forge test
+        run: forge test -vvv
+
+      - name: Forge CI profile test
+        run: FOUNDRY_PROFILE=ci forge test -vvv
+
+      - name: Proof check
+        run: make proof-check
+
+      - name: Verify public proofs offline
+        run: make verify-public-proofs-offline
+
+      - name: Public site check
+        run: make public-site-check

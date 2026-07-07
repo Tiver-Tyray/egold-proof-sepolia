@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "EGOLD_PROOF_V1",
+  "network": "sepolia",
+  "chainId": 11155111,
+  "contractAddress": "0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9",
+  "tokenSymbol": "EGOLD",
+  "tokenDecimals": 4,
+  "operationType": "MINT",
+  "operationId": "0x1111111111111111111111111111111111111111111111111111111111111001",
+  "reserveId": "0x2222222222222222222222222222222222222222222222222222222222222001",
+  "proofGeneratedAt": "2026-07-07T00:00:00Z",
+  "validAfter": 1783382400,
+  "validBefore": 1783468800,
+  "operator": "0xAB202fDd7D6Aa4C2c8ee96b184327e8aF635bD59",
+  "account": "0x2F7548424c958d759976f45AB1b67fa3353Fa42B",
+  "amountUnits": "10000",
+  "amountGrams": "1.0000",
+  "custody": {
+    "vaultId": "SEPOLIA-DEMO-VAULT-01",
+    "custodianName": "Example Independent Vault Ltd",
+    "jurisdiction": "CH-ZG",
+    "barSetId": "EGOLD-DEMO-BARSET-2026-001",
+    "custodyReceiptRef": "DEMO-CUSTODY-RECEIPT-0001"
+  },
+  "vaultId": "SEPOLIA-DEMO-VAULT-01",
+  "custodianName": "Example Independent Vault Ltd",
+  "jurisdiction": "CH-ZG",
+  "bars": [
+    {
+      "barId": "DEMO-MICROBAR-0001",
+      "barSerialHash": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "refinery": "Example Refinery",
+      "finenessPpm": 9999,
+      "grossMassMilligrams": "1000",
+      "fineGoldMilligrams": "1000"
+    }
+  ],
+  "totalFineGoldMilligrams": "1000",
+  "audit": {
+    "auditorName": "Example Reserve Auditor LLP",
+    "auditReportRef": "DEMO-AUDIT-MINT-2026-001",
+    "auditReportUri": "ipfs://bafybeigdyrzt-demo-mint-proof-v1",
+    "auditReportHash": "0x3333333333333333333333333333333333333333333333333333333333333001"
+  },
+  "auditReportHash": "0x3333333333333333333333333333333333333333333333333333333333333001",
+  "reserveLedger": {
+    "ledgerId": "EGOLD-SEPOLIA-DEMO-LEDGER",
+    "entryType": "MINT",
+    "entryRef": "LEDGER-MINT-0001",
+    "previousLedgerRoot": "0x4444444444444444444444444444444444444444444444444444444444444001",
+    "newLedgerRoot": "0x5555555555555555555555555555555555555555555555555555555555555001"
+  },
+  "previousLedgerRoot": "0x4444444444444444444444444444444444444444444444444444444444444001",
+  "newLedgerRoot": "0x5555555555555555555555555555555555555555555555555555555555555001",
+  "externalReferences": [
+    "ipfs://bafybeigdyrzt-demo-mint-proof-v1",
+    "https://example.invalid/egold/demo/mint/0001"
+  ]
+}

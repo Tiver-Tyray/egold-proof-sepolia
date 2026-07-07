@@ -1,0 +1,36 @@
+{
+  "chainId": 11155111,
+  "contractAddress": "0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9",
+  "etherscanCodeUrl": "https://sepolia.etherscan.io/address/0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9#code",
+  "generatedAt": "2026-07-07T22:52:19Z",
+  "network": "sepolia",
+  "proofBundles": [
+    {
+      "bundleHash": "0x2758cd4141a1183b434f4c37c22c22c04a5cacd46a3c5e2278c333394b640407",
+      "bundlePath": "proofs/sepolia/11155111/0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9/0xe9396bc6a2411b20d9bfa07caa89fa61373408d02c8cb829cf570589cf865958/",
+      "operationId": "0xe9396bc6a2411b20d9bfa07caa89fa61373408d02c8cb829cf570589cf865958",
+      "operationType": "MINT",
+      "proofHash": "0xa4a58510a5ce4ff29fceaa4d8105a59740016197b0ef2800174cc63d2729cb94",
+      "txHash": "0xc3b771ae3fbc18ff123624ac25fc256714c0c574c8200fcfc06bafccfb35746b"
+    },
+    {
+      "bundleHash": "0x2afc50f4873ab268b53684b25208ee89f5ec6fb22f20b6484ec313bfa071b7b7",
+      "bundlePath": "proofs/sepolia/11155111/0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9/0x6b5f69ab483efc91f02afcdbabda48caef32ce8f863208d4ff418c9e91af53ea/",
+      "operationId": "0x6b5f69ab483efc91f02afcdbabda48caef32ce8f863208d4ff418c9e91af53ea",
+      "operationType": "BURN",
+      "proofHash": "0xe6b0d4cd8409f6c3f281fd28b08d3efe70fc4056f6c3cb3da539dd195fca331b",
+      "txHash": "0x2dd0ce5f9f4e8d54682542f52ff272973b1ddeb8c6b4d51ea3205a1a5ebe6604"
+    }
+  ],
+  "publicProofIndexPath": "proofs/sepolia/11155111/0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9/index.json",
+  "schemaVersion": "EGOLD_PUBLIC_SITE_V1",
+  "security": {
+    "noCacheFiles": true,
+    "noEnvFiles": true,
+    "noPrivateKeys": true
+  },
+  "verificationCommands": [
+    "make verify-public-proofs-offline",
+    "make public-site-check"
+  ]
+}

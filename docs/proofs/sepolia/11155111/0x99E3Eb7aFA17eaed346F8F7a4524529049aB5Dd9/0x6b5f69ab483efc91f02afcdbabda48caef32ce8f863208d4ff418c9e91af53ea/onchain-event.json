@@ -1,0 +1,13 @@
+{
+  "account": "0x2f7548424c958d759976f45ab1b67fa3353fa42b",
+  "amountUnits": "4000",
+  "contractAddress": "0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9",
+  "digest": "0x30a81af171fe782d224389295fdc05aff19adca408b4f31a8fe9e0fc29319a9e",
+  "eventName": "ReserveBurn",
+  "logIndex": 655,
+  "operationId": "0x6b5f69ab483efc91f02afcdbabda48caef32ce8f863208d4ff418c9e91af53ea",
+  "operator": "0xab202fdd7d6aa4c2c8ee96b184327e8af635bd59",
+  "proofHash": "0xe6b0d4cd8409f6c3f281fd28b08d3efe70fc4056f6c3cb3da539dd195fca331b",
+  "reserveId": "0x01485f2921b1d7477e8d478dd77a634af64c9bedef51b19ac3fd3259e0c53cb7",
+  "topic0": "0x1627d3e56b589dae7daa43bfa5bf6ae2b6006a8440abc41c9c46359d19c220c2"
+}

@@ -1,0 +1,35 @@
+{
+  "chainId": 11155111,
+  "contractAddress": "0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9",
+  "generatedAt": "2026-07-07T18:56:05Z",
+  "network": "sepolia",
+  "proofs": [
+    {
+      "account": "0x2F7548424c958d759976f45AB1b67fa3353Fa42B",
+      "amountUnits": "10000",
+      "blockNumber": 11224059,
+      "bundleHash": "0x2758cd4141a1183b434f4c37c22c22c04a5cacd46a3c5e2278c333394b640407",
+      "operationId": "0xe9396bc6a2411b20d9bfa07caa89fa61373408d02c8cb829cf570589cf865958",
+      "operationType": "MINT",
+      "operator": "0xAB202fDd7D6Aa4C2c8ee96b184327e8aF635bD59",
+      "path": "0xe9396bc6a2411b20d9bfa07caa89fa61373408d02c8cb829cf570589cf865958",
+      "proofHash": "0xa4a58510a5ce4ff29fceaa4d8105a59740016197b0ef2800174cc63d2729cb94",
+      "reserveId": "0x01485f2921b1d7477e8d478dd77a634af64c9bedef51b19ac3fd3259e0c53cb7",
+      "txHash": "0xc3b771ae3fbc18ff123624ac25fc256714c0c574c8200fcfc06bafccfb35746b"
+    },
+    {
+      "account": "0x2F7548424c958d759976f45AB1b67fa3353Fa42B",
+      "amountUnits": "4000",
+      "blockNumber": 11224061,
+      "bundleHash": "0x2afc50f4873ab268b53684b25208ee89f5ec6fb22f20b6484ec313bfa071b7b7",
+      "operationId": "0x6b5f69ab483efc91f02afcdbabda48caef32ce8f863208d4ff418c9e91af53ea",
+      "operationType": "BURN",
+      "operator": "0xAB202fDd7D6Aa4C2c8ee96b184327e8aF635bD59",
+      "path": "0x6b5f69ab483efc91f02afcdbabda48caef32ce8f863208d4ff418c9e91af53ea",
+      "proofHash": "0xe6b0d4cd8409f6c3f281fd28b08d3efe70fc4056f6c3cb3da539dd195fca331b",
+      "reserveId": "0x01485f2921b1d7477e8d478dd77a634af64c9bedef51b19ac3fd3259e0c53cb7",
+      "txHash": "0x2dd0ce5f9f4e8d54682542f52ff272973b1ddeb8c6b4d51ea3205a1a5ebe6604"
+    }
+  ],
+  "schemaVersion": "EGOLD_PUBLIC_PROOFS_INDEX_V1"
+}

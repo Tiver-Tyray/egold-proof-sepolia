@@ -1,0 +1,13 @@
+{
+  "account": "0x2f7548424c958d759976f45ab1b67fa3353fa42b",
+  "amountUnits": "10000",
+  "contractAddress": "0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9",
+  "digest": "0x86f4f6ed9dadbd8c42d94e6f0cae63f72b61b3b259379a2954583bd03818d955",
+  "eventName": "ReserveMint",
+  "logIndex": 718,
+  "operationId": "0xe9396bc6a2411b20d9bfa07caa89fa61373408d02c8cb829cf570589cf865958",
+  "operator": "0xab202fdd7d6aa4c2c8ee96b184327e8af635bd59",
+  "proofHash": "0xa4a58510a5ce4ff29fceaa4d8105a59740016197b0ef2800174cc63d2729cb94",
+  "reserveId": "0x01485f2921b1d7477e8d478dd77a634af64c9bedef51b19ac3fd3259e0c53cb7",
+  "topic0": "0x025a3d4f704cd7915a565fb1af788b953d83c1d2a21f3194ddfe6234031e65e7"
+}

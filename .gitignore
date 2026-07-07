@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+
+out/
+cache/
+broadcast/
+
+work/
+work/foundry-home/
+work/foundry-bin/foundry.tar.gz
+work/egold-compile/node_modules/
+work/slither-py/
+
+generated/
+audit-results/*.log
+.secrets/

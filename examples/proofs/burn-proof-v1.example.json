@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "EGOLD_PROOF_V1",
+  "network": "sepolia",
+  "chainId": 11155111,
+  "contractAddress": "0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9",
+  "tokenSymbol": "EGOLD",
+  "tokenDecimals": 4,
+  "operationType": "BURN",
+  "operationId": "0x1111111111111111111111111111111111111111111111111111111111111002",
+  "reserveId": "0x2222222222222222222222222222222222222222222222222222222222222001",
+  "proofGeneratedAt": "2026-07-07T00:30:00Z",
+  "validAfter": 1783384200,
+  "validBefore": 1783470600,
+  "operator": "0xAB202fDd7D6Aa4C2c8ee96b184327e8aF635bD59",
+  "account": "0x2F7548424c958d759976f45AB1b67fa3353Fa42B",
+  "amountUnits": "4000",
+  "amountGrams": "0.4000",
+  "custody": {
+    "vaultId": "SEPOLIA-DEMO-VAULT-01",
+    "custodianName": "Example Independent Vault Ltd",
+    "jurisdiction": "CH-ZG",
+    "barSetId": "EGOLD-DEMO-BARSET-2026-001",
+    "redemptionReceiptRef": "DEMO-REDEMPTION-RECEIPT-0001"
+  },
+  "vaultId": "SEPOLIA-DEMO-VAULT-01",
+  "custodianName": "Example Independent Vault Ltd",
+  "jurisdiction": "CH-ZG",
+  "bars": [
+    {
+      "barId": "DEMO-MICROBAR-0001-PARTIAL",
+      "barSerialHash": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "refinery": "Example Refinery",
+      "finenessPpm": 9999,
+      "grossMassMilligrams": "400",
+      "fineGoldMilligrams": "400"
+    }
+  ],
+  "totalFineGoldMilligrams": "400",
+  "audit": {
+    "auditorName": "Example Reserve Auditor LLP",
+    "auditReportRef": "DEMO-AUDIT-BURN-2026-001",
+    "auditReportUri": "ipfs://bafybeigdyrzt-demo-burn-proof-v1",
+    "auditReportHash": "0x3333333333333333333333333333333333333333333333333333333333333002"
+  },
+  "auditReportHash": "0x3333333333333333333333333333333333333333333333333333333333333002",
+  "reserveLedger": {
+    "ledgerId": "EGOLD-SEPOLIA-DEMO-LEDGER",
+    "entryType": "BURN",
+    "entryRef": "LEDGER-BURN-0001",
+    "previousLedgerRoot": "0x5555555555555555555555555555555555555555555555555555555555555001",
+    "newLedgerRoot": "0x6666666666666666666666666666666666666666666666666666666666666001"
+  },
+  "previousLedgerRoot": "0x5555555555555555555555555555555555555555555555555555555555555001",
+  "newLedgerRoot": "0x6666666666666666666666666666666666666666666666666666666666666001",
+  "externalReferences": [
+    "ipfs://bafybeigdyrzt-demo-burn-proof-v1",
+    "https://example.invalid/egold/demo/burn/0001"
+  ]
+}
