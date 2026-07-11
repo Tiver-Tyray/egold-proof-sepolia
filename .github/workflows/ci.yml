@@ -1,31 +1,58 @@
-name: CI
+name: EGold CI
 
 on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   test:
+    name: Foundry + Proof Publication Checks
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
 
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
         with:
           version: stable
 
-      - name: Forge test
+      - name: Install Foundry dependencies if missing
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p lib
+
+          if [ ! -f lib/forge-std/src/Test.sol ]; then
+            rm -rf lib/forge-std
+            forge install foundry-rs/forge-std --no-commit
+          fi
+
+          if [ ! -f lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol ]; then
+            rm -rf lib/openzeppelin-contracts
+            forge install OpenZeppelin/openzeppelin-contracts@v5.0.2 --no-commit
+          fi
+
+      - name: Forge version
+        run: forge --version
+
+      - name: Forge tests
         run: forge test -vvv
 
-      - name: Forge CI profile test
+      - name: Forge CI profile tests
         run: FOUNDRY_PROFILE=ci forge test -vvv
 
-      - name: Proof check
+      - name: Proof examples
         run: make proof-check
 
-      - name: Verify public proofs offline
+      - name: Public proof offline verifier
         run: make verify-public-proofs-offline
 
       - name: Public site check
