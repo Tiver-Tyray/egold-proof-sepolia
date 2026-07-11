@@ -13,5 +13,14 @@ work/egold-compile/node_modules/
 work/slither-py/
 
 generated/
-audit-results/*.log
+audit-results/
+lib/
+outputs/
+deployments/31337/
+deployments/*
+!deployments/11155111/
+deployments/11155111/*
+!deployments/11155111/EGold.json
 .secrets/
+
+deployments/

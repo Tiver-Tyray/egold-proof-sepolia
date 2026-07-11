@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import datetime as dt
 import html
 import json
 import shutil
@@ -246,6 +245,10 @@ ETHERScan_LABEL = "https://sepolia.etherscan.io/address/0x99E3Eb7aFA17eaed346F8F
 
 
 def build_manifest(index):
+    generated_at = index.get("generatedAt")
+    if not isinstance(generated_at, str) or not generated_at:
+        die("proof index is missing a stable generatedAt value")
+
     proof_index_path = f"proofs/{NETWORK}/{CHAIN_ID}/{CONTRACT}/index.json"
     bundles = []
     for entry in index.get("proofs", []):
@@ -262,7 +265,7 @@ def build_manifest(index):
 
     return {
         "schemaVersion": "EGOLD_PUBLIC_SITE_V1",
-        "generatedAt": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+        "generatedAt": generated_at,
         "network": NETWORK,
         "chainId": CHAIN_ID,
         "contractAddress": CONTRACT,
