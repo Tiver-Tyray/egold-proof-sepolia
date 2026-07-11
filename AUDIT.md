@@ -313,11 +313,43 @@ Status:
 - Static site builder: added.
 - Static site verifier: added.
 - Public output scanner: added.
-- GitHub Actions CI: added.
-- External GitHub Pages publication: pending until the repository is pushed and Pages is enabled.
+- GitHub repository: <https://github.com/Tiver-Tyray/egold-proof-sepolia>.
+- GitHub Actions EGold CI: passed.
+- GitHub Pages deployment: passed.
+- Public site: <https://tiver-tyray.github.io/egold-proof-sepolia/>.
+- Fresh clone offline proof verification: passed.
+- Public site verification: passed.
+- Public secret scan: passed.
 
 The public site is generated under `docs/` from the validated `proofs/` tree. It exposes the Sepolia contract address, Etherscan code link, proof index, mint and burn bundle links, transaction hashes, proof hashes, bundle hashes, and local verification commands.
 
 `make public-site-check` builds the site, verifies the copied proof index offline, and scans both `docs/` and `proofs/` for sensitive material.
 
 Caveat: the static site improves public reproducibility of the proof publication flow. It still does not prove physical custody by itself.
+
+## 17. v0.1.0-sepolia Release Checkpoint
+
+Release `v0.1.0-sepolia` is the frozen technical Sepolia baseline for the
+verified contract at `0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9` on chain ID
+11155111. The baseline includes the immutable contract, 65 passing tests, the
+CI profile, Etherscan source verification, proof-linked mint and burn
+transactions, two reproducible public proof bundles, the offline verifier, the
+public site, the public secret scan, clean-room verification, and green GitHub
+Actions and GitHub Pages workflows.
+
+This checkpoint proves the tested smart-contract and proof-publication flow on
+Sepolia. It is not evidence of physical gold custody and is not a production
+gold-backed asset.
+
+Mainnet and production L2 deployment remain blocked until all of the following
+gates are complete:
+
+- Independent Solidity audit.
+- Production custody agreement.
+- Independent physical gold audit.
+- Production attester key ceremony.
+- Proof publication hosting policy.
+- Incident and migration governance.
+- Legal and operational review.
+
+The complete frozen release record is in `RELEASE_CHECKPOINT.md`.

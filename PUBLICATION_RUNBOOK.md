@@ -59,7 +59,26 @@ Commit:
 3. Verify from a fresh clone.
 4. Record the public URL in `PUBLIC_TESTNET_REHEARSAL.md`.
 
-## 8. Caveat
+## 8. Published Sepolia Checkpoint
+
+- Release: `v0.1.0-sepolia`.
+- Repository: <https://github.com/Tiver-Tyray/egold-proof-sepolia>.
+- GitHub Pages: <https://tiver-tyray.github.io/egold-proof-sepolia/>.
+- Contract: `0x99E3Eb7aFA17eaed346F8F7a4524529049aB5Dd9`.
+- Chain ID: 11155111.
+- GitHub Actions EGold CI: PASSED.
+- GitHub Pages deployment: PASSED.
+- Fresh clone offline proof verification: PASSED.
+- Public site verification: PASSED.
+- Public secret scan: PASSED.
+
+The canonical clean-room verification command is:
+
+```sh
+make verify-public-proofs-offline
+```
+
+## 9. Caveat
 
 GitHub Pages publication is public. Only `docs/` should be served.
 

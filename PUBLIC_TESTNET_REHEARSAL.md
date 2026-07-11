@@ -149,3 +149,23 @@ Artifact:
 - `audit-results/proof-linked-smoke.txt`.
 
 Caveat: Sepolia only. This proves the JSON-to-authorization `proofHash` link for the testnet smart-contract flow, not physical gold custody.
+
+## v0.1.0-sepolia Release Baseline
+
+The completed rehearsal is frozen as release `v0.1.0-sepolia`.
+
+Publication status:
+
+- GitHub repository: <https://github.com/Tiver-Tyray/egold-proof-sepolia>.
+- Public proof site: <https://tiver-tyray.github.io/egold-proof-sepolia/>.
+- GitHub Actions EGold CI: PASSED.
+- GitHub Pages deployment: PASSED.
+- Fresh clone offline proof verification: PASSED.
+- Public site verification: PASSED.
+- Public secret scan: PASSED.
+- Public proof bundles: 2.
+
+The release contract, roles, proof hashes, bundle hashes, transaction hashes,
+and verification gates are recorded in `RELEASE_CHECKPOINT.md`. This baseline
+is Sepolia-only and does not represent real gold or authorize a mainnet or
+production L2 deployment.
